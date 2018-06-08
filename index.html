@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>The Beatles (hangman game)</title>
 </head>
-<body>
 
+<body>
+<div class="container">
+	<div class="logo-container">
+		<img src="assets/images/beatles-logo.png" title="Beatles" alt="Beatles"
+	                                 class="game-logo">
+		<h1>Guess Game</h1>
+		<div class="clearfix"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6"><h2>Beatles video</h2>
+			<iframe class="d-none" id="videoPlay" width="100%" height="315" src="https://www.youtube.com/embed/"
+			        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="col-sm-6">
+			<h2>Guess the song title</h2>
+			<p id="lettersToGuess">
+			</p>
+			<p>Wins: <span id="winsContainer"></span></p>
+			<p>Loses: <span id="losesContainer"></span></p>
+			<p>Attempts remaining: <span id="guessesContainer"></span></p>
+			<p>Letters used: <span id="lettersUsedContainer"></span></p>
+		</div>
+	</div>
+
+</div>
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
